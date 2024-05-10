@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CG Chat Client</title>
+    <meta name="description" content="CCS Cloud Naming Convention Tester">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./public/favicon.ico">
+
+  </head>
+  <body>
+    <div id='ui'>
+      
+      <div class = "row">
+        <div class = "col-md-7 col-sm-12 title">
+          <h2>CCS Cloud Naming Convention Tester</h2>
+        </div>
+
+         
+        <label class="label" for="service">Enter Queue, Agentgroup or Treatment Name:</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" onkeyup="checkServiceName()" placeholder="APDE_STG_KGB_DEMO_SuperSerivce1_DE_1" aria-label="Enter Queue, Treatment, AgentGroup or Service Name" id="service">
+          </div>
+          <div class="col-md-7 col-sm-12 display" id="resultservice"></div>  
+
+          <label class="label" for="usergroup">Enter User-Group Name:</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" onkeyup="checkUserGroupName()" placeholder="APDE_STG_KGB_DEMO_SuperTeam_1" aria-label="User Group" id="usergroup">
+          </div>
+          <div class="col-md-7 col-sm-12 display" id="resultusergroup"></div>  
+     
+        
+        
+      </div>
+      <footer class="page-footer">
+        <div class="footer-copyright text-center py-1">
+          © Made with ❤️ By Forstner
+        </div>
+      </footer>
+     </div> 
+   
+    <script src="./assets/client.js"></script>     
+  </body>
+</html>
